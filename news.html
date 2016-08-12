@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图书推荐系统首页</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/setHomeSetFav.js" charset="gb2312"></script>
+</head>
+<body>
+<div class="top">
+	<div class="top_content">
+		<ul>
+			<li><a href="#">加入我们</a></li>
+			<li><a href="#" onclick="AddFavorite(window.location,document.title)">用户登录</a></li>
+			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		</ul>
+	</div>
+</div><!--top结束-->
+<div class="wrap">
+	<div class="logo">
+		<div class="logo_left">
+			<img src="images/logo.jpg" alt="爱读书"/>
+		</div>
+		<div class="logo_right">
+			<img src="images/tel.jpg" alt="服务热线"/>24小时服务热线：<span class="tel">123-456-7890</span>
+		</div>
+	</div><!--logo结束-->
+	<div class="nav">
+		<div class="nav_left"></div>
+		<div class="nav_mid">
+			<div class="nav_mid_left">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="user_recom.html">图书推荐</a></li>
+					<li><a href="news.html">新闻动态</a></li>
+					<li><a href="sys_recom.html">图书中心</a></li>
+					<li><a href="list.html">在线阅读</a></li>
+					<li><a href="list.html">我的书架</a></li> 
+				</ul>
+			</div>
+			<div class="nav_mid_right">
+				<form action="" method="post">
+					<input type="text" class="search_text" />
+				</form> 
+			</div>
+		</div>
+		<div class="nav_right"></div>
+	</div><!-- nav结束 -->
+	<div class="ad" id="picBox" style="height: 243px;">
+		<img src="images/ad.jpg">
+	</div><!-- ad结束 -->
+	
+	<div class="list_main">
+		<div class="news_type">
+			<h2>新闻中心</h2>
+			<div class="news_type_content">
+				<ul>
+					<li><a href="list.html">系统算法</a></li>
+					<li><a href="list.html">系统功能</a></li>
+					<li><a href="list.html">图书上新</a></li>
+					<li><a href="list.html">活动专题</a></li>
+					<li><a href="list.html">精彩视频</a></li>
+					<li><a href="list.html">资源下载</a></li>
+					<li><a href="list.html">相关推荐</a></li>
+				</ul>
+			</div>
+		</div><!-- news_type结束 -->
+
+		<div class="list_box_setting">
+		<div class="list_box">
+			<h2>新闻中心</h2>
+			<h1>“协同过滤算法”介绍</h1>
+			<p class="list_box_newsInfo">发布人：ZT   &nbsp;发布时间：2014-03-01   &nbsp;浏览：1000次</p>
+			<div class="list_box_newsContent">
+				<p>  协同过滤可分为基于用户（User-based）的协同过滤和基于项目(Item-based)的协同过滤。由于本系统主要研究基于用户的协同过滤，故如无特别说明，系统所指的协同过滤皆为基于用户的协同过滤。协同过滤推荐中采用最多的是最近邻技术，即利用用户的历史偏好信息计算用户之间的距离，将与目标用户距离最近的若干个用户作为最近邻用户，然后利用目标用户的最近邻居用户对商品评价的加权评价值来预测目标用户对特定商品的喜好程度，系统从而根据这一喜好程度来对目标用户进行推荐。</p>
+        <p> <b>“协同过滤算法”基本原理</b>     </p>
+        <p>协同过滤算法通过目标用户对项目的偏好找到其相似用户，计算目标用户与相似用户之间的相似度，将相似度最大的n位用户作为目标用户的最近邻居用户，并将最近邻用户偏好的项目且目标用户尚未涉及的项目作为一个集合，然后利用最近邻对项目的评分的加权值来预测活动用户对项目集中每一项的评分，最后将预测评分最大的Top-N的项目作为推荐集推荐给目标用户。     </p>
+        <p align="center"><img src="images/news_app.jpg" width="520" height="201" alt=""/></p>
+        <p>虽然协同过滤推荐技术在很多方面都得到了应用，但协同过滤技术仍有不少问题还待解决，最典型的问题有准确性问题、可伸缩性问题和“冷启动”问题。</p>
+        <p><b>与“基于内容的协同过滤算法”比较</b>     </p>
+        <p>与基于内容的推荐技术相比，协同过滤推荐不需要事先获得项目的特征，它能够共享其相似用户的信息，避免了基于内容推荐在内容分析方面的不完全、不精确的问题。另外，协同过滤推荐与基于内容推荐技术的最大差别在于，基于内容的推荐主要是推荐用户本来就熟悉的内容，而协同过滤推荐能够发掘用户的潜在兴趣点，它可能是在内容上完全不相似的项目。</p>
+			</div>
+		</div><!-- list_box结束 -->
+		</div><!-- list_box_setting结束 -->
+
+
+	</div><!-- list_main结束 -->
+</div><!--wrap结束-->
+
+<div class="copyright">
+	<div class="copyright_content">
+		<ul>
+			<li><a href="#">关于</a>
+				<ul>
+					<li><a href="#">系统介绍</a></li>
+			        <li><a href="#">联系我们</a></li>
+			        <li><a href="#">加入我们</a></li>
+			        <li><a href="#">© 2015 ztCoder</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">图书</a>
+				<ul>
+					<li><a href="#">热门书籍</a></li>
+					<li><a href="#">童话故事</a></li>
+					<li><a href="#">经典文学作品</a></li>
+					<li><a href="#">教材教辅</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">留言</a>
+				<ul>
+					<li><a href="#">意见反馈</a></li>
+					<li><a href="#">问题留言</a></li>
+					<li><a href="#">媒体联络</a></li>
+					<li><a href="#">在线客服</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">关注</a>
+				<ul>
+					<li><a href="#">新浪微博</a></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><a href="#">企业微信</a></li>
+					<li><a href="#">QQ空间</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><img src="images/weixin.png" />微信关注</a>
+				<ul>
+					<li><img src="images/qrcode.jpg"></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- copyright_content结束 -->
+</div><!-- copyright结束-->
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图书推荐系统首页</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/setHomeSetFav.js" charset="gb2312"></script>
+	<script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script>
+	<script type="text/javascript" src="js/mf-pattern/mF_YSlider.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/mf-pattern/mF_YSlider.css">
+	<script type="text/javascript">
+		myFocus.set({
+			id:'picBox'
+			// 注意冒号，而且不要带分号，属性间用逗号连接
+		});
+	</script>
+</head>
+<body>
+<div class="top">
+	<div class="top_content">
+		<ul>
+			<li><a href="#">加入我们</a></li>
+			<li><a href="#" onclick="AddFavorite(window.location,document.title)">用户登录</a></li>
+			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		</ul>
+	</div>
+</div><!--top结束-->
+<div class="wrap">
+	<div class="logo">
+		<div class="logo_left">
+			<img src="images/logo.jpg" alt="爱读书"/>
+		</div>
+		<div class="logo_right">
+			<img src="images/tel.jpg" alt="服务热线"/>24小时服务热线：<span class="tel">123-456-7890</span>
+		</div>
+	</div><!--logo结束-->
+	<div class="nav">
+		<div class="nav_left"></div>
+		<div class="nav_mid">
+			<div class="nav_mid_left">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="user_recom.html">图书推荐</a></li>
+					<li><a href="news.html">新闻动态</a></li>
+					<li><a href="list.html">图书中心</a></li>
+					<li><a href="list.html">在线阅读</a></li>
+					<li><a href="list.html">我的书架</a></li> 
+				</ul>
+			</div>
+			<div class="nav_mid_right">
+				<form action="" method="post">
+					<input type="text" class="search_text" />
+				</form> 
+			</div>
+		</div>
+		<div class="nav_right"></div>
+	</div><!-- nav结束 -->
+	<div class="ad" id="picBox">
+	<div class="pic"><!-- 使用myFocus固定用法 -->
+		<ul class="ucl">
+			<li><img src="images/ad2.jpg"></li>
+			<li><img src="images/ad3.jpg"></li>
+			<li><img src="images/ad4.jpg"></li>
+		</ul>
+	</div>
+	</div><!-- ad结束 -->
+	<div class="main">
+		<div class="news">
+			<div class="title">
+				<h2 class="title_left">新闻中心</h2><span class="title_right"><a href="news.html">More&gt;&gt;</a></span>
+			</div><!-- title结束 -->
+			<div class="pic_news">
+				<img src="images/news.jpg" /><span class="image_right"><h2><a href="news.html">世界读书日-4月23日</a></h2><p>世界读书日又称“世界图书日”<br/><a href="http://baike.baidu.com/link?url=zvIKJkkLxbVGv9lL9byGMAuyzWdw8Smvf_WunEw_4YIXXu2qT-qrfd_BmqfUAonh">Learn More&gt;&gt;</a></p></span>
+			</div><!-- pic_news结束 -->
+
+			<div class="news_list">
+				<ul>
+		          <li><span>2014-01-01</span><a href="news.html">【系统介绍之算法篇】“协同过滤算法”介绍</a></li>
+		          <li><span>2014-02-02</span><a href="news.html">【系统介绍之功能篇】图书推荐系统功能介绍</a></li>
+		          <!-- span放左边解决ie下日期错位的情况 -->
+		          <li><span>2014-02-10</span><a href="news.html">【图书上新】图书上新公告</a></li>
+		          <li><span>2014-02-20</span><a href="news.html" title="aa">【热门图书】最新一周热门图书排行榜</a></li>
+		        </ul>
+			</div><!-- news_list结束 -->
+		</div><!-- news结束 -->
+
+		<div class="course">
+			<div class="title">
+				<h2 class="title_left">图书中心</h2><span class="title_right"><a href="news.html">More&gt;&gt;</a></span>
+			</div><!-- title结束 -->
+
+			<div class="course_pic">
+				<img src="images/css.jpeg" />
+				<h2><a href="news.html">《小王子》</a></h2>
+				<p>Love does not mean to look at each other, but to look the same direction<br/>爱情不是终日彼此对视，爱情是共同瞭望远方、相伴而行</p>
+			</div><!-- course_pic结束 -->
+
+			<div class="course_type">
+				<ul>
+					<li>热门书籍</li>
+					<li>童话故事</li>
+					<li>经典文学作品</li>
+					<li>教材教辅</li>
+				</ul>
+			</div><!-- course_type结束 -->
+		</div><!-- course结束 -->
+
+		<div class="sidebar">
+			<div class="video">
+				<div  class="title">
+					<h2 class="title_left">媒体聚焦</h2>
+				</div><!-- title结束 -->
+				<div class="video_content">
+				<embed src="http://player.youku.com/player.php/sid/XODMwMDAxMTEy/v.swf" allowFullScreen="true" quality="high" width="220" height="140" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+				<!-- 从优酷网拷贝 -->
+				</div><!-- video_content结束 -->
+			</div><!-- video结束 -->
+			<div class="sidebar_ad">
+				<img src="images/app.jpg" />
+			</div><!-- sidebar_ad结束 -->
+		</div><!-- sidebar结束 -->
+	</div><!-- main结束 -->
+</div><!--wrap结束-->
+
+<div class="copyright">
+	<div class="copyright_content">
+		<ul>
+			<li><a href="#">关于</a>
+				<ul>
+					<li><a href="#">系统介绍</a></li>
+			        <li><a href="#">联系我们</a></li>
+			        <li><a href="#">加入我们</a></li>
+			        <li><a href="#">© 2015 ztCoder</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">图书</a>
+				<ul>
+					<li><a href="#">热门书籍</a></li>
+					<li><a href="#">童话故事</a></li>
+					<li><a href="#">经典文学作品</a></li>
+					<li><a href="#">教材教辅</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">留言</a>
+				<ul>
+					<li><a href="#">意见反馈</a></li>
+					<li><a href="#">问题留言</a></li>
+					<li><a href="#">媒体联络</a></li>
+					<li><a href="#">在线客服</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">关注</a>
+				<ul>
+					<li><a href="#">新浪微博</a></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><a href="#">企业微信</a></li>
+					<li><a href="#">QQ空间</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><img src="images/weixin.png" />微信关注</a>
+				<ul>
+					<li><img src="images/qrcode.jpg"></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- copyright_content结束 -->
+</div><!-- copyright结束-->
+</body>
+</html>

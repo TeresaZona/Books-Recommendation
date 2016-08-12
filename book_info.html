@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图书推荐系统-图书信息</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/setHomeSetFav.js" charset="gb2312"></script>
+</head>
+<body>
+<div class="top">
+	<div class="top_content">
+		<ul>
+			<li><a href="#">加入我们</a></li>
+			<li><a href="#" onclick="AddFavorite(window.location,document.title)">用户登录</a></li>
+			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		</ul>
+	</div>
+</div><!--top结束-->
+<div class="wrap">
+	<div class="logo">
+		<div class="logo_left">
+			<img src="images/logo.jpg" alt="爱读书"/>
+		</div>
+		<div class="logo_right">
+			<img src="images/tel.jpg" alt="服务热线"/>24小时服务热线：<span class="tel">123-456-7890</span>
+		</div>
+	</div><!--logo结束-->
+	<div class="nav">
+		<div class="nav_left"></div>
+		<div class="nav_mid">
+			<div class="nav_mid_left">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="user_recom.html">图书推荐</a></li>
+					<li><a href="news.html">新闻动态</a></li>
+					<li><a href="sys_recom.html">图书中心</a></li>
+					<li><a href="list.html">在线阅读</a></li>
+					<li><a href="list.html">我的书架</a></li> 
+				</ul>
+			</div>
+			<div class="nav_mid_right">
+				<form action="" method="post">
+					<input type="text" class="search_text" />
+				</form> 
+			</div>
+		</div>
+		<div class="nav_right"></div>
+	</div><!-- nav结束 -->
+	<div class="ad" id="picBox" style="height: 243px;">
+		<img src="images/ad.jpg">
+	</div><!-- ad结束 -->
+	
+	<div class="list_main">
+		<div class="news_type">
+			<h2>相关推荐</h2>
+			<div class="news_type_content">
+				<ul>
+					<li><a href="list.html">系统算法</a></li>
+					<li><a href="list.html">系统功能</a></li>
+					<li><a href="list.html">图书上新</a></li>
+					<li><a href="list.html">活动专题</a></li>
+					<li><a href="list.html">精彩视频</a></li>
+					<li><a href="list.html">资源下载</a></li>
+					<li><a href="list.html">相关推荐</a></li>
+				</ul>
+			</div>
+		</div><!-- news_type结束 -->
+
+		<div class="list_box_setting">
+		<div class="list_box">
+			<h2>图书信息</h2>
+			<h1>《撒哈拉的故事》</h1>
+			<p class="list_box_newsInfo">发布人：ZT   &nbsp;发布时间：2014-03-01   &nbsp;浏览：1000次</p>
+			<div class="list_box_newsContent">
+			<p> <b>图书编号：</b>1060068</p>
+        <p> <b>图书作者：</b>三毛 </p>
+        <p> <b>作者介绍</b>     </p>
+        <p>三毛（1943-1991），台湾作家。1943年3月26日出生于重庆，浙江省定海县人。本名为陈惠平，1946年改名陈平，笔名“三毛”。1964年入中国文化大学哲学系，肄业后曾留学欧洲，婚后定居西属撒哈拉沙漠加那利岛并以当地的生活为背景，写出一连串情感真挚的作品。1981年回到台湾，在中国文化大学任教，1984年辞去教职，专职从事写作和演讲。1991年1月4日自杀而死，终年48岁。 三毛的足迹遍及世界各地，平生著作、译作十分丰富，其中《撒哈拉的故事》《雨季不再来》《哭泣的骆驼》《我的宝贝》《闹学记》《滚滚红尘》等散文、小说、剧本更是脍炙人口，在全球华人社会广为流传，在中国大陆风靡一时，影响了整整一代人。</p>
+        <p><b>图书概要</b>     </p>
+        <p>三毛作品中最脍炙人口的《撒哈拉的故事》，由12篇精彩动人的散文结合而成，其中《沙漠中的饭店》，是三毛适应荒凉单调的沙漠生活后，重新拾笔的第一篇文字，自此之后，三毛便写出一系列以沙漠为背景的故事，倾倒了全世界的中文读者。</p>
+        <p><b>图书价格：</b>15.80元</p>
+        <p><b>出版社：</b>哈尔滨出版社</p>
+			</div>
+		</div><!-- list_box结束 -->
+		</div><!-- list_box_setting结束 -->
+
+
+	</div><!-- list_main结束 -->
+</div><!--wrap结束-->
+
+<div class="copyright">
+	<div class="copyright_content">
+		<ul>
+			<li><a href="#">关于</a>
+				<ul>
+					<li><a href="#">系统介绍</a></li>
+			        <li><a href="#">联系我们</a></li>
+			        <li><a href="#">加入我们</a></li>
+			        <li><a href="#">© 2015 ztCoder</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">图书</a>
+				<ul>
+					<li><a href="#">热门书籍</a></li>
+					<li><a href="#">童话故事</a></li>
+					<li><a href="#">经典文学作品</a></li>
+					<li><a href="#">教材教辅</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">留言</a>
+				<ul>
+					<li><a href="#">意见反馈</a></li>
+					<li><a href="#">问题留言</a></li>
+					<li><a href="#">媒体联络</a></li>
+					<li><a href="#">在线客服</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">关注</a>
+				<ul>
+					<li><a href="#">新浪微博</a></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><a href="#">企业微信</a></li>
+					<li><a href="#">QQ空间</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><img src="images/weixin.png" />微信关注</a>
+				<ul>
+					<li><img src="images/qrcode.jpg"></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- copyright_content结束 -->
+</div><!-- copyright结束-->
+</body>
+</html>
